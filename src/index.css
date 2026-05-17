@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Inconsolata:wght@400;600;700;900&family=Roboto:wght@400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Jost", "Roboto", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Inconsolata", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-primary: #0F1574;
+  --color-brand-primary-light: #878AB9;
+  --color-brand-orange: #FF6635;
+  --color-brand-orange-soft: #FFB39A;
+
+  --color-accent-purple: #7058FF;
+  --color-accent-pink: #FF4F84;
+  --color-accent-orange: #FFA41C;
+  --color-accent-green: #B0EB33;
+  --color-accent-blue: #2C81ED;
+
+  --color-ui-text-dark: #575863;
+  --color-ui-text-muted: #B1B1C2;
+  --color-ui-purple-tint: #f1eeff;
+  --color-ui-subtle-bg: #f3f3f8;
+
+  --shadow-card-subtle: 0px 8px 30.26px rgba(15, 21, 116, 0.07);
+  --shadow-card-hover: 0px 15px 30px 0px rgba(0, 0, 0, 0.1);
+  --shadow-dramatic: 0px 70px 70px -50px rgb(0 0 0 / 30%), 0px 10px 20px -15px rgb(0 0 0 / 10%);
+
+  --radius-button: 24.5px;
+  --radius-card: 24px;
+  --radius-card-large: 40px;
+}
+
+@layer base {
+  body {
+    @apply text-ui-text-dark antialiased bg-white;
+  }
+}
+
+.rainbow-gradient {
+  background: linear-gradient(to right, #FFA41C, #FF4F84, #7058FF);
+}
+
+.rainbow-gradient-hover:hover {
+  background: linear-gradient(to right, #FFA41C, #FF4F84, #7058FF, #2C81ED, #B0EB33);
+}
+
+.content-container::-webkit-scrollbar {
+  width: 8px;
+}
+.content-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.content-container::-webkit-scrollbar-thumb {
+  background: rgba(15, 21, 116, 0.05);
+  border-radius: 20px;
+}
+.content-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(15, 21, 116, 0.1);
+}
